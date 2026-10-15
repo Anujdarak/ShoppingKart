@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/customers/:path*",
+      "destination": "/api/index/customers/:path*"
+    },
+    {
+      "source": "/products/:path*",
+      "destination": "/api/index/products/:path*"
+    },
+    {
+      "source": "/wishlist/:path*",
+      "destination": "/api/index/wishlist/:path*"
+    },
+    {
+      "source": "/cart/:path*",
+      "destination": "/api/index/cart/:path*"
+    },
+    {
+      "source": "/orders/:path*",
+      "destination": "/api/index/orders/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
